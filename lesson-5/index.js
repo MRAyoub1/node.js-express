@@ -52,6 +52,11 @@ app.delete("/deleteData/:id", async (req, res) => {
     res.json(await Article.find());
 });
 
+app.get("/Data", async (req, res) => {
+    await Article.find();
+    res.json(await Article.find());
+});
+
 app.listen(3000, function(){
     console.log("I am listening in port 3000")
 });
