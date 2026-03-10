@@ -39,7 +39,18 @@ app.post("/articles", async (req, res) => {
     newArticle.number = artNum;
     await newArticle.save();
     res.send("tamaamo tamaaam");
-})
+});
+
+app.get("/getData/:id", async (req, res) => {
+    const id = req.params.id
+    res.json(await Article.findById(id));
+});
+
+app.delete("/deleteData/:id", async (req, res) => {
+    const id = req.params.id;
+    await Article.findByIdAndDelete(id);
+    res.json(await Article.find());
+});
 
 app.listen(3000, function(){
     console.log("I am listening in port 3000")
