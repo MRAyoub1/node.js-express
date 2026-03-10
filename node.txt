@@ -1,0 +1,10 @@
+lesson-1: call express - add path and port - run express
+lesson-2: nodemon - req.params - req.types(post) - api
+lesson-3: add app.use(express.json()) to read body req - add mongose - connect to mongodb data base 
+lesson-4: use mongoose.Shema - creat a Schema on article.js- add system to add Schema data on the body
+
+
+
+
+  database : (username: databaseusername - pass:databaseusername)
+  mongodb+srv://<db_username>:<db_password>@cluster0.yciqo8l.mongodb.net/?appName=Cluster0
